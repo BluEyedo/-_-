@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assignt.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Muwallad students club</title>
+</head>
+	<div class="gridcont">	
+
+
+
+		<body>
+<!-------Header content (Username, Password, login button, forget password link)---------------------->
+		<header>
+
+<!----------Username & it's box---------------------->
+			<form action="include/login.inc.php" class="logcont" id="formlogin" method="post">
+				<label> Username </label>
+				<input type="text" name="maillog" placeholder="Email">
+
+<!--------------Password & it's box---------------------->
+				<label> Password </label>
+				<input type="password" name="Passlog">
+
+<!--------------login button---------------------->
+				<button class="log" name="logbut" >login</button>
+
+<!--------------Forgot link---------------------->				
+				<a href="file:///C:/Users/ASUS/Desktop/assignment/FP/FtPs.html"> Forgot your password?</a>	
+			</form>	
+
+		</header>
+
+
+
+
+<!------Container for Welcoming---------------------->
+		<div class="welcoming">
+		<h1>Sign up new account</h1>
+		<p>For the people who were born in saudi</p>
+		</div>
+
+<!--------------Form for sign up information---------------------->
+				<form action="include/signup.inc.php" class="form" name="formsign" id="formsign" method="post">
+
+<!------------------Picture (Background)---------------------->
+					<img class="bkg" src="https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-903ea3cb.jpg">
+
+<!----------------------Container for the First name & it's box to be in the left side---------------------->
+						<div class="FstNme">
+							<label for="first"> First name </label>							
+							<input type="text" name="fstNme"  class="box" id="fstnm">
+						</div>
+
+<!----------------------Container for the Last name & it's box to be in the right side---------------------->
+						<div class="LstNme" >
+							<label  for="last name"> Last name </label>
+							<input type="text" name="lstNme" class="box" id="lstnm">
+						</div>
+
+<!----------------------Container for labels(Birthday, Email, Password) to be in the left side---------------------->		
+						<div class="lblBEP">								
+								<label > Birthday </label>
+								
+								<label > Email </label>
+
+								<label> Password </label>
+								
+								<label> Confirm password </label>
+						</div>
+
+
+<!----------------------Container for label's box(Birthday, Email, Password) to be in the left side------------------>
+						<div class="boxBEP">	
+
+<!------------------------------Date input------------------>
+								<input 
+								type="date" 
+								name="birth" 
+								id="birth_sg"
+								class="box"
+								min="1950-01-01" 
+								max="2010-01-01"
+								title="It's not allowed under the age of 10"  
+								>
+								
+
+<!------------------------------Email input------------------>
+								<input 
+								type="Email" 	
+								name="mail_sg" 
+								id="mail_sg"
+								class="box"
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{	,}$"
+								title="Take a look at the Email again" 
+								>
+								<small id="Error" class="Error"> Error Message </small>
+								
+
+<!------------------------------Password & confirmation input------------------>
+								<input
+								type="password" 
+								name="pass_sg"
+								id="pass_sg" 
+								class="box"  
+								pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+								title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" 
+								>
+								<small id="Errorpass" class="Error"> Error Message </small>
+								
+								<input
+								type="password" 
+								name="pass_sg2"
+								id="pass_sg2" 
+								class="box"   
+								title="Please match to the first password" 
+								>
+								<small id="Errorpass2" class="Error" > Error Message </small>
+
+						</div>	
+								
+<!----------------------Check box for male & female & sign up button------------------>				
+						<div class="chkbx" >
+
+<!-------------------------------Check box for male------------------>
+								<label for="male">Male</label>
+								<input type="radio" name="gender" value="male" >
+
+<!-------------------------------Check box for female------------------>
+								<label for="female">Female</label>
+								<input type="radio" name="gender" value="female" >
+								<br>
+
+<!-------------------------------Button Sign up------------------>
+
+								<button 
+								class="sign_up" id="sign_up" name="signupbutt">Sign up</button> 
+						</div>
+					</form>	
+				
+<!--------------Logo of Muwaleed club------------------>						
+				<div class="imgclub">
+					<center>
+					<img src="Makkah's Club.png" >
+					</center>
+				</div>
+
+
+
+	<script type="text/javascript" src="assignt.js"> </script>
+							
